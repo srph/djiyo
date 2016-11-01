@@ -1,0 +1,56 @@
+@mixin btn-variant($bg, $text: $color-white) {
+  color: $text;
+  background: $bg;
+
+  &:hover {
+    color: $text;
+    background: lighten($bg, 10%);
+  }
+}
+
+.btn {
+  @include link-no-underscore;
+  display: inline-block;
+  padding: 0 15px;
+  height: $form-size;
+  line-height: ($form-size - 1px);
+  color: $color-primary;
+  background: $color-white;
+  border: 0;
+  border-radius: $border-radius;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s all;
+
+  &:hover {
+    color: darken($color-primary, 5%);
+  }
+
+  &.btn--plain-danger,
+  &.btn--plain-danger:hover {
+    color: $color-danger;
+  }
+
+  &.btn--primary {
+    @include btn-variant($color-primary);
+  }
+
+  &.btn--danger {
+    @include btn-variant($color-danger);   
+  }
+
+  &.btn--outlined {
+    border: 1px solid $color-primary;
+  }
+
+  &.btn--disabled {
+    color: $color-gray;
+    border: 1px solid $color-gray;
+    cursor: disabled;
+  }
+
+  &.btn--block {
+    display: block;
+    width: 100%;
+  }
+}

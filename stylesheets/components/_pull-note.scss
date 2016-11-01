@@ -1,0 +1,32 @@
+.pull-note {
+  padding: 20px 15px;
+  color: $color-gray;
+  border-radius: 3px;
+
+  &.pull-note--primary {
+    color: $color-white;
+    background: $color-primary;
+  }
+
+  &.pull-note--danger {
+    color: $color-white;
+    background: $color-danger;
+  }
+
+  .pull-note__text {
+    padding-left: 30px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .pull-note__link {
+    color: $color-white;
+    font-weight: bold;;
+  }
+
+  .pull-note__icon {
+    float: left;
+    margin-top: -5px;
+    font-size: 25px;
+  }
+}

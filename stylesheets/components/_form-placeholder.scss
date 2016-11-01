@@ -1,0 +1,9 @@
+.form-placeholder {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-top: ($form-size / 5);
+  padding-bottom: ($form-size / 5);
+  width: 100%;
+  height: $form-size;
+}

@@ -1,0 +1,26 @@
+.tabs {
+  display: flex;
+  border-bottom: 2px solid $color-gray;
+
+  .tabs__link {
+    margin-bottom: -2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $color-gray;
+    font-weight: light;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tabs__link:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .tabs__link:hover {
+    color: $color-primary;
+  }
+
+  .tabs__link--active {
+    color: $color-primary;
+    border-bottom-color: $color-primary;
+  }
+}

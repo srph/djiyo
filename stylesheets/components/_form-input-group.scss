@@ -1,0 +1,31 @@
+.form-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: $form-size;
+  border: 1px solid $color-gray;
+  border-radius: $border-radius;
+
+  &:hover .form-input-group__addon {
+    color: $color-black;
+  }
+
+  .form-input-group__input {
+    display: block;
+    padding: 0 ($form-size / 5);
+    width: 100%;
+    border: 0;
+    outline: 0;
+  }
+
+  .form-input-group__addon {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $color-gray;
+    transition: 0.2s all;
+  }
+
+  .form-input-group__button {
+    padding: 10px;
+  }
+}

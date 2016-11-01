@@ -1,0 +1,14 @@
+.form-input {
+  display: block;
+  padding: ($form-size / 5);
+  width: 100%;
+  height: $form-size;
+  background: $color-white;
+  border: 1px solid $color-gray;
+  border-radius: $border-radius;
+  outline: 0;
+}
+
+textarea.form-input {
+  height: auto;
+}

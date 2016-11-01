@@ -1,0 +1,12 @@
+.grid {
+  @include clearfix;
+  margin-left: -($grid-gutter);
+  margin-right: -($grid-gutter);
+
+  .grid__cell {
+    position: relative;
+    float: left;
+    padding-left: ($grid-gutter);
+    padding-right: ($grid-gutter);
+  }
+}

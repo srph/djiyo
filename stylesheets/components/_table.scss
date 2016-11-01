@@ -1,0 +1,21 @@
+.table {
+  width: 100%;
+  border-spacing: 0px;
+
+  th,
+  td {
+    padding: 20px 10px;
+    padding-left: 0;
+    text-align: left;
+    margin: 0;
+    background: #fff;
+  }
+
+  th {
+    border-bottom: 1px solid $color-gray;;
+  }
+
+  td {
+    border-top: 1px solid $color-gray;
+  }
+}

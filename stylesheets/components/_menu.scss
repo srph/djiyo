@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu__section {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__section-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}

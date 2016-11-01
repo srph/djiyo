@@ -1,0 +1,22 @@
+.label {
+  display: inline-block;
+  padding: 3px 5px;
+  color: $color-primary;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-radius: $border-radius;
+
+  &.label--plain-danger {
+    color: $color-danger;
+  }
+
+  &.label--primary {
+    color: $color-white;
+    background: $color-primary;
+  }
+
+  &.label--danger {
+    color: $color-white;
+    background: $color-danger;
+  }
+}

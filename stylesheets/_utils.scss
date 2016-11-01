@@ -1,0 +1,49 @@
+.u-clearfix {
+  @include clearfix;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-success {
+  color: $color-success;
+}
+
+.u-text-muted {
+  color: $color-gray;
+}
+
+.u-text-light {
+  font-weight: 300;
+}
+
+.u-block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-spacer {
+  margin-bottom: 20px;
+}
+
+.u-spacer-large {
+  margin-bottom: 50px;
+}
+
+// Grid Utilities
+// Generates block sizes;
+// u-size-2 (2/12), etc.
+@for $i from 1 through 12 {
+  .u-size-#{$i} {
+    width: percentage($i / 12);
+  }
+}
