@@ -1,5 +1,5 @@
 {
-  "name": "deeo",
+  "name": "djiyo",
   "version": "0.1.0",
   "scripts": {
     "build": "node-sass stylesheets/style.scss -o public/dist",
@@ -13,12 +13,17 @@
     "kit",
     "digital ocean",
     "css",
-    "stylesheets",
-    "yeoman"
+    "stylesheets"
   ],
   "author": "Kier Borromeo <seraphipod@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "node-sass": "^3.10.1"
+  },
+  "dependencies": {
+    "map-stream": "0.0.6",
+    "minimist": "^1.2.0",
+    "update-notifier": "^1.0.2",
+    "vinyl-fs": "^2.4.4"
   }
 }
