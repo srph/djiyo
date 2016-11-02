@@ -6,18 +6,11 @@ This is not meant to be extended, rather to be a reference and a starting point.
 ## Installation
 **Manual** &mdash; You may simply clone the repository, and copy all the files in the `stylesheets` directory to your project folder.
 
-**Or**, you can use **[yeoman](http://yeoman.io/)** to bootstrap all the stylesheets for you. Here's the simplified instructions for your convenience:
+**Or**, you can use the cli:
 
 ```bash
-# Don't forget to `cd` to your project's
-# stylesheet directory!
-cd /path/to/my/project/stylseheets
-
-# Install yeoman
-npm i -g yo
-
-# Bootstraps djiyo for you!
-yo djiyo
+$ npm i -g djiyo
+$ djiyo install /path/to/my/project/stylesheets
 ```
 
 ## Convention
