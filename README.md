@@ -36,3 +36,22 @@ It follows the [`.block__element--modifier` convention](http://getbem.com/) in [
 .u-spacer {}
 .u-pull-right {}
 ```
+
+## FAQ
+> What's the difference with [m](github.com/srph/m)?
+
+- Mainly &mdash; **m** loosely follows [SUITCSS](https://github.com/suitcss/suit); **djiyo** is an **opinionated** [BEM](http://getbem.com/).
+- Least &mdash; Styling difference.
+
+> Why not improve [m](github.com/srph/m) instead?
+
+Personally, I think **m** looks just fine on its own. **djiyo** wasn't *forked* from **m**; it was built from scratch in a freelance project, and found it better than **m**.
+
+> Why is this a starter kit instead of a 'framework' or 'microframework'?
+
+Frameworks are great in most cases.
+
+- It saves time and effort. Why do we have to re-do the UI every project anyway?
+- And especially when you're not a UI guy.
+
+However, when you have custom designs and designers in your team, these frameworks can get in your way. I'm a fan of [bootstrap-practices](github.com/rstacruz/bootstrap-practices). To summarize, it advises people to just take what they need. Moreover, if you need to 'theme' a framework's components, it's a better decision to build it from scratch (or just use a framework's component as a base).
