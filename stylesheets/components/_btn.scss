@@ -1,4 +1,4 @@
-@mixin btn-variant($bg, $text: $color-white) {
+@mixin button-variant($bg, $text: $color-white) {
   color: $text;
   background: $bg;
 
@@ -8,7 +8,7 @@
   }
 }
 
-.btn {
+.button {
   @include link-no-underscore;
   display: inline-block;
   padding: 0 15px;
@@ -26,30 +26,31 @@
     color: darken($color-primary, 5%);
   }
 
-  &.btn--plain-danger,
-  &.btn--plain-danger:hover {
+  &.button--plain-danger,
+  &.button--plain-danger:hover {
     color: $color-danger;
   }
 
-  &.btn--primary {
-    @include btn-variant($color-primary);
+  &.button--primary {
+    @include button-variant($color-primary);
   }
 
-  &.btn--danger {
-    @include btn-variant($color-danger);   
+  &.button--danger {
+    @include button-variant($color-danger);   
   }
 
-  &.btn--outlined {
+  &.button--outlined {
     border: 1px solid $color-primary;
   }
 
-  &.btn--disabled {
+  &.button--disabled,
+  &:disabled {
     color: $color-gray;
     border: 1px solid $color-gray;
     cursor: disabled;
   }
 
-  &.btn--block {
+  &.button--block {
     display: block;
     width: 100%;
   }

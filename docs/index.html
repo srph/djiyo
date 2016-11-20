@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="description" content="A Digital-Ocean-esque CSS starter kit">
   <meta name="keywords" content="css, sass, scss, digital ocean, boilerplate">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="docs-hero">
@@ -21,6 +22,256 @@
         Let's take a look
         <span class="docs-hero__caret"></span>
       </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="docs-section">
+      <h2 class="docs-section__heading">Labels</h2>
+      <div class="u-size-6">
+        <div class="u-spacer">
+          <span class="label">On-going</span>
+          <span class="label label--primary">Active</span>
+          <span class="label label--plain-danger">Inactive</span>
+          <span class="label label--danger">Deleted</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="docs-section">
+      <h2 class="docs-section__heading">Buttons</h2>
+      <div class="u-size-6 u-spacer">
+        <div class="u-spacer">
+          <button class="button">Submit</button>
+          <button class="button button--plain-danger">Submit</button>
+          <button class="button button--primary">Submit</button>
+          <button class="button button--danger">Submit</button>
+          <button class="button" disabled>Disabled</button>
+        </div>
+
+        <div class="u-spacer-large">
+          <button class="button button--primary button--block">Primary Block</button>
+        </div>
+
+        <h4 class="docs-section__sub-heading">Plain Button</h4>
+
+        <div class="pull-note pull-note--primary u-spacer">
+          <div class="pull-note__icon">
+            <i class="fa fa-info-circle"></i>
+          </div>
+
+          <div class="pull-note__text">
+            Handy when only the accessibility of a button is needed.
+          </div>
+        </div>
+        
+        <button class="plain-button">
+          <i class="fa fa-pencil"></i>
+        </button>
+
+        <button class="plain-button">
+          <i class="fa fa-remove"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="docs-section">
+      <h2 class="docs-section__heading">Form</h2>
+
+      <div class="u-size-6">
+        <div class="u-spacer-large">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="password" id="username" class="form-input" placeholder="johndoe">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-input" placeholder="******">
+          </div>
+        </div>
+
+        <h4 class="docs-section__sub-heading">Input Placeholder</h4>
+
+        <div class="pull-note pull-note--primary u-spacer">
+          <div class="pull-note__icon">
+            <i class="fa fa-info-circle"></i>
+          </div>
+
+          <div class="pull-note__text">
+            Useful for 'display-only' inputs
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Current Points</label>
+          <p class="form-placeholder">$100,000,000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="docs-section">
+      <h2 class="docs-section__heading">Grid</h2>
+
+      <div class="pull-note pull-note--primary u-spacer u-size-8">
+        <div class="pull-note__icon">
+          <i class="fa fa-lightbulb-o"></i>
+        </div>
+
+        <div class="pull-note__text">
+          Grid uses the <code>u-size-x</code> utility. You can also use this to size some elements. Just like me!
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-12">
+          <div class="docs-grid-block">Twelve</div>
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-1">
+          <div class="docs-grid-block">One</div>
+        </div>
+
+        <div class="grid__cell u-size-11">
+          <div class="docs-grid-block">Eleven</div>
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-2">
+          <div class="docs-grid-block">Two</div>
+        </div>
+
+        <div class="grid__cell u-size-10">
+          <div class="docs-grid-block">Ten</div>
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-3">
+          <div class="docs-grid-block">Three</div>
+        </div>
+
+        <div class="grid__cell u-size-9">
+          <div class="docs-grid-block">Nine</div>
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-4">
+          <div class="docs-grid-block">Four</div>
+        </div>
+
+        <div class="grid__cell u-size-8">
+          <div class="docs-grid-block">Eight</div>
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-5">
+          <div class="docs-grid-block">Five</div>
+        </div>
+
+        <div class="grid__cell u-size-7">
+          <div class="docs-grid-block">Seven</div>
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-6">
+          <div class="docs-grid-block">Six</div>
+        </div>
+
+        <div class="grid__cell u-size-6">
+          <div class="docs-grid-block">Six</div>
+        </div>
+      </div>
+
+      <div class="grid u-spacer">
+        <div class="grid__cell u-size-4">
+          <div class="docs-grid-block">Four</div>
+        </div>
+
+        <div class="grid__cell u-size-4">
+          <div class="docs-grid-block">Four</div>
+        </div>
+
+        <div class="grid__cell u-size-4">
+          <div class="docs-grid-block">Four</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="docs-section">
+      <h2 class="docs-section__heading">Tables</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th width="150">Status</th>
+            <th width="100">Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>billgates</td>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>
+              <span class="label label--primary">
+                Active
+              </span>
+            </td>
+            <td>
+              <button class="button">
+                View
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>billgates</td>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>
+              <span class="label label--danger">
+                Removed
+              </span>
+            </td>
+            <td>
+              <button class="button">
+                View
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>    
+
+    <div class="docs-section">
+      <h2 class="docs-section__heading">Tabs</h2>
+
+      <div class="u-size-6">
+        <div class="tabs">
+          <a href="#" class="tabs__link tabs__link--active">
+            Repository
+          </a>
+
+          <a href="#" class="tabs__link">
+            Members
+          </a>
+
+          <a href="#" class="tabs__link">
+            Settings
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </body>

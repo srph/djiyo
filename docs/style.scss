@@ -90,3 +90,37 @@
     animation-iteration-count: infinite;
   }
 }
+
+.docs-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 1px solid $color-gray;
+
+  .docs-section__heading {
+    margin-bottom: 50px;
+  }
+
+  .docs-section__sub-heading {
+    margin-bottom: 25px;
+  }
+
+  .docs-section__inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.docs-grid-block {
+  height: 30px;
+  line-height: 29px;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  background: $color-gray;
+}
+
+.docs-separator {
+
+}
