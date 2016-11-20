@@ -1,4 +1,4 @@
-# djiyo
+# djiyo [![Progress Badge](https://img.shields.io/badge/progress-wip-blue.svg?style=flat-square)](https://img.shields.io/badge/progress-wip-blue.svg?style=flat-square)
 A Digital-Ocean-esque CSS starter kit
 
 This is not meant to be extended, rather to be a reference and a starting point. It provides you a bunch of common components with pretty styling (similar to [**Digital Ocean**](https://digitalocean.com)'s design), written in an *opinionated* [**BEM**](http://getbem.com/).
