@@ -3,7 +3,7 @@ const path = require('path');
 const pkg = require('../package');
 
 const vfs = require('vinyl-fs');
-const map = require('map-stream');
+const log = require('./log');
 
 // CLI Updater
 const notifier = require('update-notifier');
@@ -23,23 +23,17 @@ if ( command === 'install' ) {
     process.exit();
   }
 
-  const directory = path.resolve(process.cwd(), input);
-  console.log('');
-  console.log(' Install : Djiyo stylesheets are now being copied over to ');
+  console.log(' Install : Djiyo stylesheets are now being copied over to', input);
 
-  vfs.src('stylesheets/**/*')
-    .pipe(map(function(file, cb) {
-      const filename = file.path.substr(file.base.length);
-      console.log(`    Copy : ${filename} `);
-      cb(null, file);
-    }))
-    .pipe(vfs.dest(directory))
+  vfs.src(path.resolve(__dirname, '../stylesheets/**/*.scss'))
+    .pipe(log)
+    .pipe(vfs.dest(input))
     .on('finish', () => {
       console.log(' Success : Djiyo stylesheets were successfully copied! ');
       console.log('');
     })
-    .on('err', (err) => {
-      console.log(err);
+    .on('error', (err) => {
+      console.log('   Error : ', err);
     });
 }
 
