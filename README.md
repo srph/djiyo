@@ -54,4 +54,4 @@ Frameworks are great in most cases.
 - It saves time and effort. Why do we have to re-do the UI every project anyway?
 - And especially when you're not a UI guy.
 
-However, when you have custom designs and designers in your team, these frameworks can get in your way. I'm a fan of [bootstrap-practices](github.com/rstacruz/bootstrap-practices). To summarize, it advises people to just take what they need. Moreover, if you need to 'theme' a framework's components, it's a better decision to build it from scratch (or just use a framework's component as a base).
+However, when you have custom designs and designers in your team, these frameworks can get in your way. I'm a fan of [bootstrap-practices](https://github.com/rstacruz/bootstrap-practices). To summarize, it advises people to just take what they need. Moreover, if you need to 'theme' a framework's components, it's a better decision to build it from scratch (or just use a framework's component as a base).
